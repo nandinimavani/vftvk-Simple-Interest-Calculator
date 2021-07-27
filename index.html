@@ -10,9 +10,9 @@
         <h1>Simple Interest Calculator</h1>
         <form action="" id="mainform">
         <p> <label>Amount</label> <input type="number"  id="principal">  <br/></p>
-        <p> <label> Rate </label><input type="range" onchange="updateRate()"  id="rate" min="minval" max="maxval" step="0.25" value="10.25">  <br/></p>
-        <span id="rate_val">10.25%</span>
-        <p> <label> No. of Years </label>><select name="years" id="years"> 
+        <p> <label> Rate </label><input type="range" onchange="updateRate()"  id="rate" min="minval" max="maxval" step="0.25" value="10.25">  <br/>
+        <span id="rate_val">10.25%</span> </p>
+        <p> <label> No. of Years </label><select name="years" id="years"> 
             <option value="1">1</option>
             <option value="1">2</option>
             <option value="1">3</option>
@@ -28,10 +28,7 @@
         <p><button onclick="compute(); return false;">Compute Interest</button></p>
         </form>
         <span id="result" class="result">            
-                If you deposit <mark><label id="depositmessage"></label></mark><br/>
-				at an interest rate of <mark><label id="interestmessage"></label></mark>.<br/>
-				You wiill receive an amount of <mark><label id="amountmessage"></label></mark>,<br/>
-				in the year <mark><label id="yearmessage"></label></mark>
+               
         </span>
         <footer>
             &#169; This Calculator belongs to nandini 
